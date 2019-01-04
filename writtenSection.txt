@@ -2,13 +2,26 @@ Answer each question in a written format
 
 1. What does semantic HTML mean?
 
+    It means that your html markup should relay more the meaning of your content, not the appearance.
+
 2. What is the box model?
+
+    It is a visual reference guide for styling elements in the document tree. Each element has pre-defined layout spec to the model using content, padding, border and margin respectively.
+
 
 3. What is the difference between IDs and Classes?
 
+    The difference between ID and class selectors is that ID selectors identify one element where a class can be used to identify a group of elements.
+
+
 4. What is z-index (CSS property) useful for?
 
+    On positioned elements you can regulate a stack order, elements with a higher stack order number are placed in front of other elements with a lesser value using z-index.
+
 5. Summarize what the keyword 'this' is used for?
+
+    The 'this' keyword always references the object that is executing the current bit of code. It is used to target that object and perform any code relating to that item. 
+
 
 6. What is a callback? What are common uses for callbacks in JavaScript?
 
