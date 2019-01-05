@@ -22,21 +22,37 @@ Answer each question in a written format
 
     The 'this' keyword always references the object that is executing the current bit of code. It is used to target that object and perform any code relating to that item. 
 
-
 6. What is a callback? What are common uses for callbacks in JavaScript?
 
+    A callback is a function you provide to another piece of code, allowing it to be called by that code.
+    
 7. What is a closure and why is it useful?
+
+    A closure is a construct that has an environment of its own where private variables inside persist.
+    Because the variables are private, there are usually publicly accessible methods inside the closure to manipulate that data.
+    Closures can help us keep that data secure, like classes we can also use closures as templates to create multiple instances of that starting data.
 
 8. How does a prototype work?
 
+    A prototype is basically a reference on a datatype that can be pointed to from all future instances improving memory conservation.
+
 9. Describe what a component-based framework/library is?
+
+    A Component-based framework/library can use and reuse components to build something. In react you usually have one main app component that renders
+    other children components and then those children can in turn render other components creating a tree like organization of pieces that make it easy
+    for you to see how all the components interact with each other.
 
 10. What is the component lifecycle in React?
 
+    Each component goes through a phase of events creating a lifecycle, where in each phase you can update the client or state using methods of that phase. The phases run from mounting, to updating, and then to unmounting creating a lifecycle.
+
 11. What is REST? (not just a description of the acronym)
+
+    REST is a style of architecture where the client and the server are separate and they communicate as long as they're using the same message format. 
 
 12. Name three common ways of getting data from a request (in Express.JS):
 
+    Express can retrieve data from nodes' global object, from sessions, or from a database.
 
 
 -- =====================
@@ -51,8 +67,16 @@ email varchar(255)
 
 -Get all users:
 
+select * from users ;
+
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+
+insert into users (name, email) values ('brent', 'fake@fake.com') ;
 
 -Update the newly created user's name to 'Bobby Boy':
 
+update users set name = 'Bobby Boy' where name = 'brent' ;
+
 -Delete the newly updated user:
+
+delete from users where name = 'Bobby Boy' ;
